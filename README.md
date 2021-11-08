@@ -15,8 +15,8 @@ I am using the marvel.com api. Here's the link: https://developer.marvel.com/
 
 ## Wireframes
 
-<img src="wireframes/wireframes.png" alt='wireframes'>
-<img src="wireframes/wireframes1.png" alt="wireframes1">
+<img src="wireframes.png" alt='wireframes'>
+<img src="wireframes1.png" alt="wireframes1">
 
 ### MVP/PostMVP
 
@@ -55,7 +55,7 @@ You are **responsible** for scheduling time with your squad to seek approval for
 
 <!-- Include a full list of features that have been prioritized based on the `Time and Importance` Matrix.  Link this image in a similar manner to your wireframes -->
 
-<img src="priority matrix/Priority matrix.png" alt="priority matrix">
+<img src="Priority matrix.png" alt="priority matrix">
 
 
 ## Timeframes
