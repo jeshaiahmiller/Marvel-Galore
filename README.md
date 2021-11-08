@@ -11,7 +11,26 @@ This is a site that allows you to search your favorite marvel movies and shows. 
 
 I am using the marvel.com api. Here's the link: https://developer.marvel.com/
 
-<img src="apisnppet.png" alt="api snippet">
+```
+{
+    "code": 200,
+    "status": "Ok",
+    "copyright": "© 2021 MARVEL",
+    "attributionText": "Data provided by Marvel. © 2021 MARVEL",
+    "attributionHTML": "<a href=\"http://marvel.com\">Data provided by Marvel. © 2021 MARVEL</a>",
+    "etag": "7534d3b6fd5ea48503c2a8a3d079004bae1fa800",
+    "data": {
+        "offset": 0,
+        "limit": 20,
+        "total": 50199,
+        "count": 20,
+        "results": [
+            {
+                "id": 82967,
+                "digitalId": 0,
+                "title": "Marvel Previews (2017)",
+               
+```
 
 ## Wireframes
 
@@ -19,22 +38,21 @@ I am using the marvel.com api. Here's the link: https://developer.marvel.com/
 <img src="wireframes1.png" alt="wireframes1">
 
 ### MVP/PostMVP
-
-The functionality will then be divided into two separate lists: MPV and PostMVP.  Carefully decided what is placed into your MVP as the client will expect this functionality to be implemented upon project completion.  
+ 
 
 #### MVP 
 <!-- *These are examples only. Replace with your own MVP features.* -->
 - Use marvel api to receive relevant information.
-- render the movies onto the page
+- Render the movies onto the page
 - Allowing user to click on the movies/shows and recieve additional info about them.
-- add javascript to create functionality
-- style the page uding flex box and css
-- add media queries to cater to different screen sizes.
+- Add javascript to create functionality
+- Style the page uding flex box and css
+- Add media queries to cater to different screen sizes.
 
 #### PostMVP  
 <!-- *These are examples only. Replace with your own Post-MVP features.* -->
-- add information for comic books and characters
-- add additional styling
+- Add information for comic books and characters
+- Add additional styling
 
 ## Project Schedule
 
@@ -43,13 +61,12 @@ The functionality will then be divided into two separate lists: MPV and PostMVP.
 You are **responsible** for scheduling time with your squad to seek approval for each deliverable by the end of the corresponding day, excluding `Saturday` and `Sunday`. -->
 |  Day | Deliverable | Status
 |---|---| ---|
-|nov 7| Prompt / Wireframes / Priority Matrix / Timeframes | complete
-|nov 8| Project Approval | Incomplete
+|nov 7|  / Wireframes / Priority Matrix / Timeframes | complete
 |nov 8| Core Application Structure (HTML, CSS, etc.) | Incomplete
 |nov 9| Pseudocode / actual code | Incomplete
 |nov 10| Initial Clickable Model  | Incomplete
 |nov 11-12| MVP | Incomplete
-|nov 15| Presentations | Incomplete
+
 
 ## Priority Matrix
 
@@ -61,7 +78,6 @@ You are **responsible** for scheduling time with your squad to seek approval for
 ## Timeframes
 <!-- Tell us how long you anticipate spending on each area of development. Be sure to consider how many hours a day you plan to be coding and how many days you have available until presentation day. -->
 
-Time frames are also key in the development cycle.  You have limited time to code all phases of the game.  Your estimates can then be used to evalute game possibilities based on time needed and the actual time you have before game must be submitted. It's always best to pad the time by a few hours so that you account for the unknown so add and additional hour or two to each component to play it safe. Throughout your project, keep track of your Time Invested and Actual Time and update your README regularly.
 
 | Component | Priority | Estimated Time | Time Invested | Actual Time |
 | --- | :---: |  :---: | :---: | :---: |
@@ -69,12 +85,14 @@ Time frames are also key in the development cycle.  You have limited time to cod
 | HTML | H | 2hrs| 2.5hrs | 2.5hrs |
 | pseudocoding | M | 3hrs| 1.5hrs| 2hrs|
 | CSS | L | 2.5hrs | 3hrs | 4hrs|
-| Javascript | H | 7hrs | 8hrs | 9hrs |
+| Js functionality | H | 4hrs | 4hrs | 4hrs |
+| Events for buttons | H | 3hrs | 3hrs | 3hrs
 | API calling | H | 4hrs | 4hrs | 4hrs |
-| retrieving data | H | 3hrs | 4hrs | 4hrs|
-| styling api | H | 4hrs | 4hrs | 4hrs |
-| responsive design | H | 5hrs | 5hrs | 5hrs
-| media queries | M | 4hrs | 4hrs | 4hrs |
+| Retrieving data | H | 3hrs | 4hrs | 4hrs|
+| Styling api | H | 4hrs | 4hrs | 4hrs |
+| Responsive design | H | 4hrs | 4hrs | 4hrs
+| Styling info/images | M | 3hrs | 3hrs | 3hrs
+| Media queries | M | 4hrs | 4hrs | 4hrs |
 | Total | H | 42hrs| 45hrs | 45hrs |
 
 ## Code Snippet
