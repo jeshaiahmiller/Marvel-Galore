@@ -38,7 +38,7 @@ I am using the marvel.com api. Here's the link: https://developer.marvel.com/
 <img src="wireframes1.png" alt="wireframes1">
 
 ### MVP/PostMVP
- 
+
 
 #### MVP 
 <!-- *These are examples only. Replace with your own MVP features.* -->
@@ -61,7 +61,7 @@ I am using the marvel.com api. Here's the link: https://developer.marvel.com/
 You are **responsible** for scheduling time with your squad to seek approval for each deliverable by the end of the corresponding day, excluding `Saturday` and `Sunday`. -->
 |  Day | Deliverable | Status
 |---|---| ---|
-|nov 7|  / Wireframes / Priority Matrix / Timeframes | complete
+|nov 7| / Wireframes / Priority Matrix / Timeframes | complete
 |nov 8| Core Application Structure (HTML, CSS, etc.) | Incomplete
 |nov 9| Pseudocode / actual code | Incomplete
 |nov 10| Initial Clickable Model  | Incomplete
@@ -84,7 +84,7 @@ You are **responsible** for scheduling time with your squad to seek approval for
 | Planning | H | 2hrs| 3.5hrs | 3.5hrs |
 | HTML | H | 2hrs| 2.5hrs | 2.5hrs |
 | pseudocoding | M | 3hrs| 1.5hrs| 2hrs|
-| CSS | L | 2.5hrs | 3hrs | 4hrs|
+| CSS | L | 3hrs | 3hrs | 4hrs|
 | Js functionality | H | 4hrs | 4hrs | 4hrs |
 | Events for buttons | H | 3hrs | 3hrs | 3hrs
 | API calling | H | 4hrs | 4hrs | 4hrs |
@@ -93,7 +93,8 @@ You are **responsible** for scheduling time with your squad to seek approval for
 | Responsive design | H | 4hrs | 4hrs | 4hrs
 | Styling info/images | M | 3hrs | 3hrs | 3hrs
 | Media queries | M | 4hrs | 4hrs | 4hrs |
-| Total | H | 42hrs| 45hrs | 45hrs |
+| Testing functionality | M | 2hrs | 2hrs | 2hrs |
+| Total | H | 41hrs| 41hrs | 41hrs |
 
 ## Code Snippet
 
