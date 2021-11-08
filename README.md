@@ -61,7 +61,7 @@ I am using the marvel.com api. Here's the link: https://developer.marvel.com/
 You are **responsible** for scheduling time with your squad to seek approval for each deliverable by the end of the corresponding day, excluding `Saturday` and `Sunday`. -->
 |  Day | Deliverable | Status
 |---|---| ---|
-|nov 7| / Wireframes / Priority Matrix / Timeframes | complete
+|nov 7| Wireframes / Priority Matrix / Timeframes | complete
 |nov 8| Core Application Structure (HTML, CSS, etc.) | Incomplete
 |nov 9| Pseudocode / actual code | Incomplete
 |nov 10| Initial Clickable Model  | Incomplete
