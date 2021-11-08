@@ -11,7 +11,7 @@ This is a site that allows you to search your favorite marvel movies and shows. 
 
 I am using the marvel.com api. Here's the link: https://developer.marvel.com/
 
-<img src="apisnppet.png" alt="api snippet">
+<img src="api snippet/apisnppet.png">
 
 ## Wireframes
 
