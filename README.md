@@ -5,7 +5,7 @@ Marvel Galore
 
 ## Project Description
 
-This is a site that allows you to search your favorite marvel movies and shows. This will display information about the movies.
+This is a site that allows you to search your favorite marvel comics and characters. This will display information about them.
 
 ## API and Data Sample
 
@@ -43,15 +43,15 @@ I am using the marvel.com api. Here's the link: https://developer.marvel.com/
 #### MVP 
 <!-- *These are examples only. Replace with your own MVP features.* -->
 - Use marvel api to receive relevant information.
-- Render the movies onto the page
-- Allowing user to click on the movies/shows and recieve additional info about them.
+- Render the comics and/or characters onto the page
+- Allowing user to click on the comics/characters and recieve additional info about them.
 - Add javascript to create functionality
 - Style the page uding flex box and css
 - Add media queries to cater to different screen sizes.
 
 #### PostMVP  
 <!-- *These are examples only. Replace with your own Post-MVP features.* -->
-- Add information for comic books and characters
+- Add information about creators
 - Add additional styling
 
 ## Project Schedule
