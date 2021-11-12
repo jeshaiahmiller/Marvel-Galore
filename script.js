@@ -8,11 +8,12 @@ async function getMarvel() {
   try {
     let res = await axios.get(urlComic)
     let res2 = await axios.get(characterUrl)
-    let comics = res.data
-    let characters = res2.data
+    let comics = res.data.data.results
+    let characters = res2.data.data.results
     console.log(comics)
     console.log(characters)
-    showCharacterData(characters)
+    // showCharacterData(characters)
+    showComicData(comics)
 
   } catch (error) {
     console.log(error);
@@ -26,23 +27,65 @@ getMarvel()
 const dataBoxes = document.querySelector('.boxes')
 
 function showCharacterData(characters) {
-  let characterName = document.createElement("h3");
-  characterName.innerText = res2.data.results.name
-  dataBoxes.appendChild(characterName)
+  characters.forEach(character => {
+    let characterName = document.createElement("h3");
+    characterName.innerText = character.name
+    dataBoxes.appendChild(characterName)
 
-  let image = document.createElement('img')
-  image.src = res2.data.results.thumbnail
-  dataBoxes.appendChild(image)
+    let image = document.createElement('img')
+    image.src = `${character.thumbnail.path + "/portrait_xlarge." + character.thumbnail.extension}`
+    dataBoxes.appendChild(image)
+
+    let characterDescription = document.createElement('p')
+    characterDescription.innerText = character.description
+    dataBoxes.appendChild(characterDescription)
+    if (characterDescription = "") {
+      console.log("No Description")
+    }
+
+    let characterComic = document.createElement('h4')
+    characterComic.innerText = `${'COMIC: ' + character.comics.items[0].name}`
+    dataBoxes.appendChild(characterComic)
+
+  })
+
+}
+
+function showComicData(comics) {
+  comics.forEach(comics => {
+    let comicTitle = document.createElement("h3")
+    comicTitle.innerText = comics.title
+    dataBoxes.appendChild(comicTitle)
+
+    let comicImage = document.createElement("img")
+    comicImage.src = `${comics.thumbnail.path + "/portrait_xlarge." + comics.thumbnail.extension}`
+    dataBoxes.appendChild(comicImage)
+
+    let comicCharacters = document.createElement('p')
+    comicCharacters.innerText = `${"CHARACTERS: " + comics.characters.items}`
+    dataBoxes.appendChild(comicCharacters)
+
+
+
+  })
 
 
 }
 
 
+const marvelForm = document.querySelector('#marvel-form')
+const searchMarvel = document.querySelector('#searchMarvel')
 
-const searchMarvel = document.querySelector('searchMarvel')
+marvelForm.addEventListener("submit", (e) => {
+  e.preventDefault()
+  removeCharacter()
+  let characterSearch = searchMarvel.value
+  console.log(characterSearch)
+  fetchData(characterSearch)
 
-// searchMarvel.addEventListener('submit', (e) => {
-//   e.preventDefault()
 
-//   console.log(searchMarvel.value)
-// })
+})
+
+function removeCharacter() {
+  dataBoxes.innerHTML = ""
+}
