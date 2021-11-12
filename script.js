@@ -12,19 +12,20 @@ async function getMarvel() {
     let characters = res2.data
     console.log(comics)
     console.log(characters)
-
+    showCharacterData(characters)
 
   } catch (error) {
     console.log(error);
   } finally {
     console.log("done")
   }
+
 }
 getMarvel()
 
 const dataBoxes = document.querySelector('.boxes')
 
-function showCharacterData() {
+function showCharacterData(characters) {
   let characterName = document.createElement("h3");
   characterName.innerText = res2.data.results.name
   dataBoxes.appendChild(characterName)
@@ -35,7 +36,7 @@ function showCharacterData() {
 
 
 }
-showCharacterData()
+
 
 
 const searchMarvel = document.querySelector('searchMarvel')
