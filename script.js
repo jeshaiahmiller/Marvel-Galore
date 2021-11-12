@@ -37,10 +37,13 @@ function showCharacterData(characters) {
     dataBoxes.appendChild(image)
 
     let characterDescription = document.createElement('p')
-    characterDescription.innerText = character.description
-    dataBoxes.appendChild(characterDescription)
-    if (characterDescription = "") {
-      console.log("No Description")
+
+    if (character.description === "") {
+      characterDescription.innerText = "No description available"
+      dataBoxes.appendChild(characterDescription)
+    } else {
+      characterDescription.innerText = character.description
+      dataBoxes.appendChild(characterDescription)
     }
 
     let characterComic = document.createElement('h4')
@@ -61,11 +64,21 @@ function showComicData(comics) {
     comicImage.src = `${comics.thumbnail.path + "/portrait_xlarge." + comics.thumbnail.extension}`
     dataBoxes.appendChild(comicImage)
 
-    let comicCharacters = document.createElement('p')
-    comicCharacters.innerText = `${"CHARACTERS: " + comics.characters.items}`
-    dataBoxes.appendChild(comicCharacters)
+    //comicCharacters needs support
+    let comicCharacters = document.createElement('h5')
+    comics.characters.items.forEach((character) => {
+      comicCharacters.innerText = `${"CHARACTERS: " + character.name}`;
+      dataBoxes.appendChild(comicCharacters);
+    });
+    // console.log(comics.characters.items)
 
+    let comicDescription = document.createElement('p')
+    comicDescription.innerText = comics.description
+    dataBoxes.appendChild(comicDescription)
 
+    let comicPrice = document.createElement('h4')
+    comicPrice.innerText = `${"PRICE: " + "$" + comics.prices[0].price}`
+    dataBoxes.appendChild(comicPrice)
 
   })
 
@@ -79,6 +92,7 @@ const searchMarvel = document.querySelector('#searchMarvel')
 marvelForm.addEventListener("submit", (e) => {
   e.preventDefault()
   removeCharacter()
+  removeComic()
   let characterSearch = searchMarvel.value
   console.log(characterSearch)
   fetchData(characterSearch)
@@ -87,5 +101,8 @@ marvelForm.addEventListener("submit", (e) => {
 })
 
 function removeCharacter() {
+  dataBoxes.innerHTML = ""
+}
+function remoceComic() {
   dataBoxes.innerHTML = ""
 }
