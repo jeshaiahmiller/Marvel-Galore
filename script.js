@@ -16,6 +16,8 @@ async function getMarvel() {
 
   } catch (error) {
     console.log(error);
+  } finally {
+    console.log("done")
   }
 }
 getMarvel()
@@ -26,6 +28,10 @@ function showCharacterData() {
   let characterName = document.createElement("h3");
   characterName.innerText = res2.data.results.name
   dataBoxes.appendChild(characterName)
+
+  let image = document.createElement('img')
+  image.src = res2.data.results.thumbnail
+  dataBoxes.appendChild(image)
 
 
 }
