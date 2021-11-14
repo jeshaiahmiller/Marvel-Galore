@@ -34,8 +34,8 @@ I am using the marvel.com api. Here's the link: https://developer.marvel.com/
 
 ## Wireframes
 
-<img src="wireframes.png" alt='wireframes'>
-<img src="wireframes1.png" alt="wireframes1">
+<img src="finishedwireframes.png" alt='wireframes'>
+<img src="finishedwireframes1.png" alt="wireframes1">
 
 ### MVP/PostMVP
 
