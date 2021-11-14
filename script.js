@@ -1,4 +1,4 @@
-const urlComic = ("http://gateway.marvel.com/v1/public/comics?ts=1&apikey=a78e3adcbc7bd18276cc614ce23deb26&hash=9fa0da4cb7c4e322ed7bca01b1ca91c4&limit=10")
+const urlComic = ("http://gateway.marvel.com/v1/public/comics?ts=1&apikey=a78e3adcbc7bd18276cc614ce23deb26&hash=9fa0da4cb7c4e322ed7bca01b1ca91c4&limit=10&offset=12")
 const characterUrl = ('http://gateway.marvel.com/v1/public/characters?ts=1&apikey=a78e3adcbc7bd18276cc614ce23deb26&hash=9fa0da4cb7c4e322ed7bca01b1ca91c4&limit=100')
 
 
@@ -46,7 +46,6 @@ function showCharacterData(characters) {
 
 
     let characterDescription = document.createElement('p')
-
     if (character.description === "") {
       characterDescription.innerText = "No description available"
       dataBoxes.appendChild(characterDescription)
@@ -80,7 +79,6 @@ function showComicData(comics) {
       comicCharacters.innerText = `${"CHARACTERS: " + character.name}`;
       dataBoxes.appendChild(comicCharacters);
     });
-    // console.log(comics.characters.items)
 
     let comicDescription = document.createElement('p')
     comicDescription.innerText = comics.description
@@ -96,8 +94,6 @@ function showComicData(comics) {
     let comicPrice = document.createElement('h4')
     comicPrice.innerText = `${"PRICE: " + "$" + comics.prices[0].price}`
     dataBoxes.appendChild(comicPrice)
-
-
   })
 
 
@@ -112,12 +108,9 @@ const searchMarvel = document.querySelector('#searchMarvel')
 marvelForm.addEventListener("submit", (e) => {
   e.preventDefault()
   removeCharacter()
-  // removeComic()
   let characterSearch = searchMarvel.value
   console.log(characterSearch)
   getMarvel(characterSearch)
-
-
 })
 
 function removeCharacter() {
@@ -129,9 +122,6 @@ function removeComic() {
 
 marvelForm.addEventListener("submit", (e) => {
   e.preventDefault();
-  // removeCharacter();
   removeComic();
   let characterSearch = searchMarvel.value;
-  // console.log(characterSearch);
-  // getMarvel(characterSearch);
 });
