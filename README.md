@@ -1,7 +1,7 @@
 
 ## Project Name
 
-Marvel Galore
+[Marvel Galore](https://jeshaiahmiller.github.io/Marvel-Galore/)
 
 ## Project Description
 
